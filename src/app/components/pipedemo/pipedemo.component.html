@@ -1,0 +1,16 @@
+<div>
+    <h3>Pipe Demo Component</h3>
+    <p>
+        <label>
+            Enter some text:
+            <input type="text" [(ngModel)]="text">
+        </label>
+    </p>
+    <p>
+        Entered Text: {{text}} <br>
+        Uppercase: {{text | Uppercase}} <br>
+        Lowercase: {{text|Lowercase}} <br>
+        Titlecase: {{text|Titlecase}} <br>
+        Today: {{today | date:'shortDate'}}
+    </p>
+</div>
